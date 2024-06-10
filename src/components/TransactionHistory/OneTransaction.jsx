@@ -1,7 +1,15 @@
-export default OneTransaction = ({ id, type, mount, currency }) => (
-  <tr key={id}>
-    <td>{type}</td>
-    <td>{mount}</td>
-    <td>{currency}</td>
-  </tr>
+import styles from './TransactionHistory.module.scss';
+
+const OneTransaction = ({ id, type, amount, currency }) => (
+  <>
+    <tbody className={styles.tbody}>
+      <tr className={styles.tbodydata} key={id}>
+        <td className={styles.tdbodydata}>{type}</td>
+        <td className={styles.tdbodydata}>{amount}</td>
+        <td className={styles.tdbodydata}>{currency}</td>
+      </tr>
+    </tbody>
+  </>
 );
+
+export default OneTransaction;

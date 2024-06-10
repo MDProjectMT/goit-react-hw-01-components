@@ -1,18 +1,68 @@
 .statistics {
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  margin: 15px auto;
+  border: 0.5px lightgray solid;
+  border-radius: 4px;
 }
 .title {
-  color: black;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 25px 0;
+  width: 100%;
+  border-bottom: 0.5px lightgray solid;
+  margin: 0 auto;
+  text-align: center;
 }
 .list {
-  color: black;
+  display: flex;
+  text-decoration: none;
+  background-color: royalblue;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0 0 4px 4px;
 }
 .label {
-  color: black;
+  color: white;
+  font-size: 12px;
 }
 .percentage {
-  color: black;
+  color: white;
+  font-size: 18px;
 }
 .item {
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 70px;
+  height: 60px;
+}
+
+.bgColor1 {
+  background-color: #25b4de;
+}
+
+.bgColor2 {
+  background-color: #a161ee;
+}
+
+.bgColor3 {
+  background-color: #be467e;
+}
+
+.bgColor4 {
+  background-color: #46be9b;
+}
+
+.bgColor5 {
+  background-color: #bea646;
 }

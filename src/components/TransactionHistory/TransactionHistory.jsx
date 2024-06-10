@@ -5,7 +5,7 @@ import styles from './TransactionHistory.module.scss';
 export default class TransactionHistory extends Component {
   constructor(props) {
     super(props);
-    state = {
+    this.state = {
       items: props.items,
     };
   }
@@ -14,19 +14,23 @@ export default class TransactionHistory extends Component {
     return (
       <>
         <table className={styles.transaction}>
-          <thead>
+          <thead className={styles.thead}>
             <tr>
               <th>Type</th>
               <th>Amount</th>
               <th>Currency</th>
             </tr>
           </thead>
-          <OneTransaction
-            key={items.id}
-            type={items.type}
-            mount={items.mount}
-            currency={items.currency}
-          />
+          {this.state.items.map(item => {
+            return (
+              <OneTransaction
+                key={item.id}
+                type={item.type}
+                amount={item.amount}
+                currency={item.currency}
+              />
+            );
+          })}
         </table>
       </>
     );

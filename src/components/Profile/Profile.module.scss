@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0.5px lightgray solid;
+  border-radius: 5px;
+  width: 240px;
+  margin: 0 auto;
 }
 
 .description {
@@ -10,36 +14,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px 0 0;
 }
 
 .avatar {
-  max-width: 315px;
+  max-width: 100px;
 }
 .name {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 .tag {
-  color: silver;
+  color: gray;
+  margin: 0;
 }
 .location {
-  color: silver;
+  color: gray;
 }
 
 .stats {
   display: flex;
-  gap: 25px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  border-top: 0.5px lightgray solid;
+  background-color: lightgray;
+  border-radius: 0 0 4px 4px;
   li {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 13px;
+    width: 80px;
+  }
+  .border {
+    border-right: 0.5px silver solid;
+    border-left: 0.5px silver solid;
   }
 }
 
 .label {
-  color: silver;
+  color: gray;
+  font-size: 12px;
+  font-family: sans-serif;
 }
 
 .quantity {
   font-size: 1.5rem;
   font-weight: bold;
+  font-size: 13px;
 }

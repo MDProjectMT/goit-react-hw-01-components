@@ -1,3 +1,29 @@
 .transaction {
   color: black;
+  width: 600px;
+  font-size: 15px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.thead {
+  text-align: center;
+  height: 40px;
+  background-color: lightblue;
+  tr th {
+    border: 0.5px lightgray solid;
+  }
+}
+
+.tbody {
+  text-align: center;
+  height: 40px;
+}
+.tdbodydata {
+  border: 0.5px darkgray solid;
+  margin: 0 auto;
+  text-align: center;
+}
+.tbody:nth-child(2n + 1) {
+  background-color: lightgray;
 }
