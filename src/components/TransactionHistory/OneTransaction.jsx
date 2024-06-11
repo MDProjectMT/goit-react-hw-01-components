@@ -1,4 +1,5 @@
 import styles from './TransactionHistory.module.scss';
+import PropTypes from 'prop-types';
 
 const OneTransaction = ({ id, type, amount, currency }) => (
   <>
@@ -11,5 +12,12 @@ const OneTransaction = ({ id, type, amount, currency }) => (
     </tbody>
   </>
 );
+
+OneTransaction.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
 
 export default OneTransaction;

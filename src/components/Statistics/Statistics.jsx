@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import styles from './Statistics.module.scss';
+import PropTypes from 'prop-types';
 
 export default class Statistics extends Component {
   constructor(props) {
@@ -40,3 +41,13 @@ export default class Statistics extends Component {
     );
   }
 }
+
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+};

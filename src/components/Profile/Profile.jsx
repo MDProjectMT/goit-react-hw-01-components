@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import styles from './Profile.module.scss';
+import PropTypes from 'prop-types';
 
 export default class Profile extends Component {
   constructor(props) {
@@ -47,3 +48,17 @@ export default class Profile extends Component {
     );
   }
 }
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
+
+// stats: PropTypes.shape({
+//  followers: PropTypes.number,
+//  views: PropTypes.number,
+//  likes: PropTypes.number,
+// })

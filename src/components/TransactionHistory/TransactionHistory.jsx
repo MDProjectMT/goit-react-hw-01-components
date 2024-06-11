@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import OneTransaction from './OneTransaction';
 import styles from './TransactionHistory.module.scss';
+import PropTypes from 'prop-types';
 
 export default class TransactionHistory extends Component {
   constructor(props) {
@@ -36,3 +37,7 @@ export default class TransactionHistory extends Component {
     );
   }
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.array,
+};

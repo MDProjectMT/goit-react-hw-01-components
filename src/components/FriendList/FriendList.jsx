@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import OneFriend from './OneFriend';
 import styles from './FriendList.module.scss';
+import PropTypes from 'prop-types';
 
 export default class FriendList extends Component {
   constructor(props) {
@@ -29,3 +30,13 @@ export default class FriendList extends Component {
     );
   }
 }
+FriendList.propTypes = {
+  friend: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      isOnline: PropTypes.bool,
+      avatar: PropTypes.string,
+      name: PropTypes.string.isRequired,
+    })
+  ),
+};
